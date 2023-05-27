@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.loaded_hiding {
+  background-image: none;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loaded {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+}
+
+.clockShow {
+  width: 100px;
+  height: 100px;
+  background-image: url(images/clock.jpg);
+  background-size: cover;
+  animation: rotate 3s 1;
+}
+
+.clockHide {
+  opacity: 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
